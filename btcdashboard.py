@@ -58,15 +58,10 @@ try:
 except Exception as e:
     st.error(f"Error Google Trends: {e}")
 
-# ---------------- BlockchainCenter Embeds ----------------
-st.header("Altseason Index")
-st.components.v1.iframe("https://www.blockchaincenter.net/en/altcoin-season-index/", height=600, scrolling=True)
+# ---------------- BlockchainCenter Links ----------------
+st.header("BlockchainCenter Tools")
 
-st.header("Bitcoin Rainbow Chart")
-st.components.v1.iframe("https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/", height=600, scrolling=True)
-
-st.header("Crypto Sentiment Index")
-st.components.v1.iframe("https://www.blockchaincenter.net/en/crypto-sentiment-index/", height=600, scrolling=True)
-
-st.header("Daily Trending Coins")
-st.components.v1.iframe("https://www.blockchaincenter.net/en/coins-trending/", height=600, scrolling=True)
+st.markdown("[Altseason Index](https://www.blockchaincenter.net/en/altcoin-season-index/)")
+st.markdown("[Bitcoin Rainbow Chart](https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/)")
+st.markdown("[Crypto Sentiment Index](https://www.blockchaincenter.net/en/crypto-sentiment-index/)")
+st.markdown("[Daily Trending Coins](https://www.blockchaincenter.net/en/coins-trending/)")
